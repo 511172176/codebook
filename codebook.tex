@@ -95,178 +95,19 @@
 
 \section{Bit Index Tree (BIT) - Lowbit}
 
-\begin{lstlisting}
-// Bit Index Tree (BIT) - Lowbit
-#define lowbit(x) ((x) & (-(x)))
-int bit[2 * maxn] = {0};  // 宣告並初始化 bit 陣列
-
-void add(int p, int v) {
-    while (p < 2 * maxn) {
-        bit[p] += v;    // 更新當前節點的值
-        p += lowbit(p); // 跳到下一個需要更新的節點
-    }
-}
-
-int sum(int p) {
-    int ret = 0;
-    while (p > 0) {
-        ret += bit[p];  // 累加前綴和
-        p -= lowbit(p); // 跳到上一個節點
-    }
-    return ret;
-}
-\end{lstlisting}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Bit Index Tree (BIT) - Lowbit.cpp}
 
 \section{Kruskal 最小生成樹 (MST)}
 
-\begin{lstlisting}
-// Kruskal MST (最小生成樹)
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cmath>
-using namespace std;
-
-const int maxn = 1005;  // 最大節點數
-
-struct Point {
-    int x, y;
-};
-
-struct Edge {
-    int u, v;
-    double cost;
-    bool operator<(const Edge& e) const {
-        return cost < e.cost;  // 按邊的權重排序
-    }
-};
-
-int parent[maxn], rank[maxn];  // 並查集
-Point points[maxn];  // 存儲每個點的座標
-Edge e[maxn * maxn];  // 存儲所有邊
-int m;  // 邊的數量
-
-// 初始化並查集
-void init(int n) {
-    for (int i = 0; i < n; i++) {
-        parent[i] = i;
-        rank[i] = 0;
-    }
-}
-
-// 路徑壓縮找根
-int find(int u) {
-    if (parent[u] != u) {
-        parent[u] = find(parent[u]);
-    }
-    return parent[u];
-}
-
-// 合併兩個集合
-bool uni(int u, int v) {
-    int root_u = find(u);
-    int root_v = find(v);
-
-    if (root_u != root_v) {
-        if (rank[root_u] > rank[root_v]) {
-            parent[root_v] = root_u;
-        } else if (rank[root_u] < rank[root_v]) {
-            parent[root_u] = root_v;
-        } else {
-            parent[root_v] = root_u;
-            rank[root_u]++;
-        }
-        return true;
-    }
-    return false;
-}
-
-// 計算兩個點之間的歐幾里得距離
-double dist(int u, int v) {
-    int dx = points[u].x - points[v].x;
-    int dy = points[u].y - points[v].y;
-    return sqrt(dx * dx + dy * dy);
-}
-
-// Kruskal 最小生成樹算法
-double kruskal(int n) {
-    init(n);
-    sort(e, e + m);  // 按權重對邊排序
-
-    double ans = 0;
-    int edge_count = 0;
-    for (int i = 0; i < m; i++) {
-        int u = e[i].u, v = e[i].v;
-        if (uni(u, v)) {  // 如果 u 和 v 不在同一集合中
-            ans += e[i].cost;
-            if (++edge_count == n - 1) break;  // 當邊數達到 n-1 時停止
-        }
-    }
-    return ans;  // 返回最小生成樹的總權重
-}
-
-\end{lstlisting}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Kruskal 最小生成樹 (MST).cpp}
 
 \section{SPFA 最短路徑算法}
 
-\begin{lstlisting}
-// SPFA 最短路徑算法
-int dist[maxn];  // 存儲到達每個節點的最短距離
-vector<pair<int, int>> E[maxn];  // 鄰接表存儲圖
-bool vis[maxn];  // 訪問標記
-int out[maxn];   // 用來檢測負環
-
-bool spfa(int s, int n) {
-    queue<int> Q;
-    Q.push(s);  // 將起點s加入隊列
-    while (!Q.empty()) {
-        int u = Q.front();
-        Q.pop();
-        vis[u] = 0;
-        out[u]++;
-        if (out[u] > n) return false; // 出現負權重環
-        for (int j = 0; j < E[u].size(); j++) {
-            int v = E[u][j].first;
-            if (dist[v] > dist[u] + E[u][j].second) {  // 有更短的路徑
-                dist[v] = dist[u] + E[u][j].second;
-                if (vis[v]) continue;
-                vis[v] = 1;
-                Q.push(v);  // 將v加入隊列
-            }
-        }
-    }
-    return true;
-}
-\end{lstlisting}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SPFA 最短路徑算法.cpp}
 
 \section{連通集 (Disjoint Set)}
 
-\begin{lstlisting}
-// Disjoint Set 連通集 - 加權合併與路徑壓縮
-int parent[maxn];
-fill(parent, parent + maxn, -1);  // 初始化 parent 陣列，表示每個節點是獨立的
-
-void weighted_union2(int i, int j) {
-    int temp = parent[i] + parent[j];
-    if (parent[i] > parent[j]) {
-        parent[i] = j;  // j為新根
-        parent[j] = temp;
-    } else {
-        parent[j] = i;  // i為新根
-        parent[i] = temp;
-    }
-}
-
-int find2(int i) {
-    int root, trail, lead;
-    for (root = i; parent[root] >= 0; root = parent[root]);  // 找根
-    for (trail = i; trail != root; trail = lead) {           // 路徑壓縮
-        lead = parent[trail];
-        parent[trail] = root;
-    }
-    return root;
-}
-\end{lstlisting}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/連通集 (Disjoint Set).cpp}
 
 \section{Nim 遊戲 SG 函數}
 

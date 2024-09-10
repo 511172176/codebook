@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.6)  10 SEP 2024 23:46
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.6)  10 SEP 2024 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -573,9 +573,11 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Bit Index Tree (BIT) - Lowbit.cpp)
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Kruskal 最小生成樹 (MST).cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 18.0pt, for example:
@@ -584,13 +586,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
 
-[4]
+[4])
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
+(C:/Users/ae887/OneDrive/桌面/codebook/code/SPFA 最短路徑算法.cpp)
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
+(C:/Users/ae887/OneDrive/桌面/codebook/code/連通集 (Disjoint Set).cpp)
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
@@ -720,10 +724,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8536 strings out of 409029
- 202481 string characters out of 5756742
+ 8560 strings out of 409029
+ 203943 string characters out of 5756742
  2227612 words of memory out of 5000000
- 31127 multiletter control sequences out of 15000+600000
+ 31139 multiletter control sequences out of 15000+600000
  558771 words of font info for 56 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  74i,13n,92p,308b,1968s stack positions out of 10000i,1000n,20000p,200000b,200000s
