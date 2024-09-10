@@ -1,23 +1,23 @@
-// map ¬O C++ STL ¤¤ªºÃöÁp¦¡®e¾¹¡A´£¨ÑÁä­È¹ïªº¦sÀx¡C
+// map æ˜¯ C++ STL ä¸­çš„é—œè¯å¼å®¹å™¨ï¼Œæä¾›éµå€¼å°çš„å­˜å„²ã€‚
 
 #include <iostream>
 #include <map>
 using namespace std;
 
 int main() {
-    map<string, int> m;  // «Å§i¤@­Ó map¡Akey ¬° string¡Avalue ¬° int
+    map<string, int> m;  // å®£å‘Šä¸€å€‹ mapï¼Œkey ç‚º stringï¼Œvalue ç‚º int
 
-    // ´¡¤JÁä­È¹ï
+    // æ’å…¥éµå€¼å°
     m["apple"] = 5;
     m["banana"] = 10;
     m["orange"] = 7;
 
-    // ¨Ï¥Î key ¨Ó³X°İ¼Æ¾Ú
-    cout << "apple: " << m["apple"] << endl;  // ¿é¥X¡Gapple: 5
+    // ä½¿ç”¨ key ä¾†è¨ªå•æ•¸æ“š
+    cout << "apple: " << m["apple"] << endl;  // è¼¸å‡ºï¼šapple: 5
 
-    // ¹M¾ú map
+    // éæ­· map
     for (map<string, int>::iterator it = m.begin(); it != m.end(); ++it) {
-        cout << it->first << ": " << it->second << endl;  // ¿é¥X¨C­ÓÁä­È¹ï
+        cout << it->first << ": " << it->second << endl;  // è¼¸å‡ºæ¯å€‹éµå€¼å°
     }
 
     return 0;
@@ -27,24 +27,24 @@ int main() {
 \section{Stack}
 
 \begin{lstlisting}[language=C++]
-// stack ¬O«á¶i¥ı¥Xªº¼Æ¾Úµ²ºc¡A¾A¥Î©ó»İ­n«á¶i¥ı¥X (LIFO) ªº³õ´º¡C
+// stack æ˜¯å¾Œé€²å…ˆå‡ºçš„æ•¸æ“šçµæ§‹ï¼Œé©ç”¨æ–¼éœ€è¦å¾Œé€²å…ˆå‡º (LIFO) çš„å ´æ™¯ã€‚
 
 #include <iostream>
 #include <stack>
 using namespace std;
 
 int main() {
-    stack<int> s;  // «Å§i¤@­Ó¾ã¼Æ«¬ªº stack
+    stack<int> s;  // å®£å‘Šä¸€å€‹æ•´æ•¸å‹çš„ stack
 
-    // ´¡¤J¼Æ¾Ú
+    // æ’å…¥æ•¸æ“š
     s.push(10);
     s.push(20);
     s.push(30);
 
-    // Åª¨ú¨Ã²¾°£´Ì³»¼Æ¾Ú
+    // è®€å–ä¸¦ç§»é™¤æ£§é ‚æ•¸æ“š
     while (!s.empty()) {
-        cout << "Top: " << s.top() << endl;  // ¿é¥X·í«e´Ì³»¼Æ¾Ú
-        s.pop();  // ²¾°£´Ì³»¼Æ¾Ú
+        cout << "Top: " << s.top() << endl;  // è¼¸å‡ºç•¶å‰æ£§é ‚æ•¸æ“š
+        s.pop();  // ç§»é™¤æ£§é ‚æ•¸æ“š
     }
 
     return 0;
@@ -54,24 +54,24 @@ int main() {
 \section{Priority Queue}
 
 \begin{lstlisting}[language=C++]
-// priority_queue ¬O¤@­ÓÀu¥ı¶¤¦C¡A¹w³]±¡ªp¤U¬O¤j³»°ï¡A®Ú¾ÚÀu¥ı¯Å¦sÀx¼Æ¾Ú¡C
+// priority_queue æ˜¯ä¸€å€‹å„ªå…ˆéšŠåˆ—ï¼Œé è¨­æƒ…æ³ä¸‹æ˜¯å¤§é ‚å †ï¼Œæ ¹æ“šå„ªå…ˆç´šå­˜å„²æ•¸æ“šã€‚
 
 #include <iostream>
 #include <queue>
 using namespace std;
 
 int main() {
-    priority_queue<int> pq;  // «Å§i¤@­Ó¾ã¼Æ«¬ªºÀu¥ı¶¤¦C¡A¹w³]¬°¤j³»°ï
+    priority_queue<int> pq;  // å®£å‘Šä¸€å€‹æ•´æ•¸å‹çš„å„ªå…ˆéšŠåˆ—ï¼Œé è¨­ç‚ºå¤§é ‚å †
 
-    // ´¡¤J¼Æ¾Ú
+    // æ’å…¥æ•¸æ“š
     pq.push(30);
     pq.push(10);
     pq.push(20);
 
-    // Åª¨ú¨Ã²¾°£¶¤¦C³»³¡¼Æ¾Ú
+    // è®€å–ä¸¦ç§»é™¤éšŠåˆ—é ‚éƒ¨æ•¸æ“š
     while (!pq.empty()) {
-        cout << "Top: " << pq.top() << endl;  // ¿é¥X·í«e¶¤¦C³»³¡¼Æ¾Ú
-        pq.pop();  // ²¾°£³»³¡¼Æ¾Ú
+        cout << "Top: " << pq.top() << endl;  // è¼¸å‡ºç•¶å‰éšŠåˆ—é ‚éƒ¨æ•¸æ“š
+        pq.pop();  // ç§»é™¤é ‚éƒ¨æ•¸æ“š
     }
 
     return 0;
@@ -81,24 +81,24 @@ int main() {
 \section{Queue}
 
 \begin{lstlisting}[language=C++]
-// queue ¬O¥ı¶i¥ı¥Xªº¼Æ¾Úµ²ºc¡A¾A¥Î©ó»İ­n¥ı¶i¥ı¥X (FIFO) ªº³õ´º¡C
+// queue æ˜¯å…ˆé€²å…ˆå‡ºçš„æ•¸æ“šçµæ§‹ï¼Œé©ç”¨æ–¼éœ€è¦å…ˆé€²å…ˆå‡º (FIFO) çš„å ´æ™¯ã€‚
 
 #include <iostream>
 #include <queue>
 using namespace std;
 
 int main() {
-    queue<int> q;  // «Å§i¤@­Ó¾ã¼Æ«¬ªº¶¤¦C
+    queue<int> q;  // å®£å‘Šä¸€å€‹æ•´æ•¸å‹çš„éšŠåˆ—
 
-    // ´¡¤J¼Æ¾Ú
+    // æ’å…¥æ•¸æ“š
     q.push(10);
     q.push(20);
     q.push(30);
 
-    // Åª¨ú¨Ã²¾°£¶¤­º¼Æ¾Ú
+    // è®€å–ä¸¦ç§»é™¤éšŠé¦–æ•¸æ“š
     while (!q.empty()) {
-        cout << "Front: " << q.front() << endl;  // ¿é¥X·í«e¶¤­º¼Æ¾Ú
-        q.pop();  // ²¾°£¶¤­º¼Æ¾Ú
+        cout << "Front: " << q.front() << endl;  // è¼¸å‡ºç•¶å‰éšŠé¦–æ•¸æ“š
+        q.pop();  // ç§»é™¤éšŠé¦–æ•¸æ“š
     }
 
     return 0;

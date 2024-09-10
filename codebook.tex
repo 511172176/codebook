@@ -6,7 +6,10 @@
 \usepackage{multicol}  % 用來分欄顯示
 \usepackage{geometry}  % 調整頁邊距
 \usepackage{titlesec}  % 控制標題格式
-
+\usepackage[utf8]{inputenc} % 使用 UTF-8 編碼
+\usepackage{listingsutf8} % 支援UTF-8註解顯示
+\usepackage[utf8]{inputenc}
+\usepackage{listingsutf8}
 % 設置中文主字體
 \setCJKmainfont{SimSun}
 
@@ -15,6 +18,7 @@
 
 % 設置程式碼顯示樣式
 \lstset{
+  inputencoding=utf8, % 確保支持UTF-8編碼
   basicstyle=\ttfamily\small,               % 程式碼字體為 footnotesize
   keywordstyle=\bfseries\color{blue},              % 關鍵字樣式
   commentstyle=\itshape\scriptsize\color{green!50!black},  % 註解字體稍微縮小
@@ -62,262 +66,32 @@
 
 \section{Vector}
 
-\begin{lstlisting}[language=C++]
-// vector 是 C++ 的動態陣列，可以根據需要自動調整大小。
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Vector.cpp}
 
-#include <iostream>
-#include <vector>
-using namespace std;
-
-int main() {
-    vector<int> v;  // 宣告一個整數型的 vector
-
-    // 插入數據
-    v.push_back(10);
-    v.push_back(20);
-    v.push_back(30);
-
-    // 使用下標訪問數據
-    for (int i = 0; i < v.size(); i++) {
-        cout << v[i] << " ";  // 輸出：10 20 30
-    }
-    cout << endl;
-
-    // 使用迭代器遍歷數據
-    for (vector<int>::iterator it = v.begin(); it != v.end(); ++it) {
-        cout << *it << " ";  // 輸出：10 20 30
-    }
-    cout << endl;
-
-    return 0;
-}
-\end{lstlisting}
 
 \section{使用 vector<vector<int>> 建立 2D 矩陣}
 
-\begin{lstlisting}
-#include <iostream>
-#include <vector>
-using namespace std;
-
-int main() {
-    // 建立一個 3x3 的 2D 矩陣
-    vector<vector<int>> matrix(3, vector<int>(3, 0));  // 初始值全為 0
-
-    // 填充矩陣
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            matrix[i][j] = i + j;  // 例如矩陣元素等於 i+j
-        }
-    }
-
-    // 輸出矩陣
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cout << matrix[i][j] << " ";
-        }
-        cout << endl;
-    }
-
-    return 0;
-}
-\end{lstlisting}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/使用 vectorvectorint 建立 2D 矩陣.cpp}
 
 \section{Map}
 
-\begin{lstlisting}[language=C++]
-// map 是 C++ STL 中的關聯式容器，提供鍵值對的存儲。
-
-#include <iostream>
-#include <map>
-using namespace std;
-
-int main() {
-    map<string, int> m;  // 宣告一個 map，key 為 string，value 為 int
-
-    // 插入鍵值對
-    m["apple"] = 5;
-    m["banana"] = 10;
-    m["orange"] = 7;
-
-    // 使用 key 來訪問數據
-    cout << "apple: " << m["apple"] << endl;  // 輸出：apple: 5
-
-    // 遍歷 map
-    for (map<string, int>::iterator it = m.begin(); it != m.end(); ++it) {
-        cout << it->first << ": " << it->second << endl;  // 輸出每個鍵值對
-    }
-
-    return 0;
-}
-\end{lstlisting}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Map.cpp}
 
 \section{Stack}
 
-\begin{lstlisting}[language=C++]
-// stack 是後進先出的數據結構，適用於需要後進先出 (LIFO) 的場景。
-
-#include <iostream>
-#include <stack>
-using namespace std;
-
-int main() {
-    stack<int> s;  // 宣告一個整數型的 stack
-
-    // 插入數據
-    s.push(10);
-    s.push(20);
-    s.push(30);
-
-    // 讀取並移除棧頂數據
-    while (!s.empty()) {
-        cout << "Top: " << s.top() << endl;  // 輸出當前棧頂數據
-        s.pop();  // 移除棧頂數據
-    }
-
-    return 0;
-}
-\end{lstlisting}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Stack.cpp}
 
 \section{Priority Queue}
 
-\begin{lstlisting}[language=C++]
-// priority_queue 是一個優先隊列，預設情況下是大頂堆，根據優先級存儲數據。
-
-#include <iostream>
-#include <queue>
-using namespace std;
-
-int main() {
-    priority_queue<int> pq;  // 宣告一個整數型的優先隊列，預設為大頂堆
-
-    // 插入數據
-    pq.push(30);
-    pq.push(10);
-    pq.push(20);
-
-    // 讀取並移除隊列頂部數據
-    while (!pq.empty()) {
-        cout << "Top: " << pq.top() << endl;  // 輸出當前隊列頂部數據
-        pq.pop();  // 移除頂部數據
-    }
-
-    return 0;
-}
-\end{lstlisting}
-
-\section{Queue}
-
-\begin{lstlisting}[language=C++]
-// queue 是先進先出的數據結構，適用於需要先進先出 (FIFO) 的場景。
-
-#include <iostream>
-#include <queue>
-using namespace std;
-
-int main() {
-    queue<int> q;  // 宣告一個整數型的隊列
-
-    // 插入數據
-    q.push(10);
-    q.push(20);
-    q.push(30);
-
-    // 讀取並移除隊首數據
-    while (!q.empty()) {
-        cout << "Front: " << q.front() << endl;  // 輸出當前隊首數據
-        q.pop();  // 移除隊首數據
-    }
-
-    return 0;
-}
-\end{lstlisting}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Priority Queue.cpp}
 
 \section{建樹}
 
-\begin{lstlisting}[language=C++]
-// 使用 DFS 方式建立樹結構
-
-#include <iostream>
-#include <vector>
-using namespace std;
-
-const int maxn = 1005;  // 最大節點數
-vector<int> tree[maxn];  // 用於存儲樹的鄰接表
-bool visited[maxn];  // 記錄節點是否已被訪問
-
-// 建立樹
-void addEdge(int u, int v) {
-    tree[u].push_back(v);
-    tree[v].push_back(u);  // 因為是無向樹，雙向連接
-}
-
-// 深度優先搜索 (DFS) 建立樹
-void dfs(int u) {
-    visited[u] = true;
-    for (int v : tree[u]) {
-        if (!visited[v]) {
-            cout << "Edge: " << u << " - " << v << endl;  // 輸出邊
-            dfs(v);  // 繼續遞迴遍歷
-        }
-    }
-}
-
-int main() {
-    int n = 5;  // 節點數
-
-    // 建立樹的邊
-    addEdge(1, 2);
-    addEdge(1, 3);
-    addEdge(2, 4);
-    addEdge(2, 5);
-
-    // 從節點1開始遍歷樹
-    dfs(1);
-
-    return 0;
-}
-\end{lstlisting}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/建樹.cpp}
 
 \section{建圖}
 
-\begin{lstlisting}[language=C++]
-// 使用鄰接表建立圖
-
-#include <iostream>
-#include <vector>
-using namespace std;
-
-const int maxn = 1005;  // 最大節點數
-vector<pair<int, int>> graph[maxn];  // 用於存儲圖的鄰接表，pair 表示(鄰接點, 邊權重)
-
-// 建立圖的邊 (有向圖)
-void addEdge(int u, int v, int weight) {
-    graph[u].push_back(make_pair(v, weight));  // 添加一條從 u 到 v 的有向邊，邊的權重為 weight
-}
-
-int main() {
-    int n = 5;  // 節點數
-
-    // 建立圖的邊
-    addEdge(1, 2, 10);  // 節點1到節點2，權重為10
-    addEdge(1, 3, 5);
-    addEdge(2, 4, 3);
-    addEdge(3, 5, 2);
-
-    // 輸出圖的鄰接表
-    for (int u = 1; u <= n; u++) {
-        cout << "Node " << u << " connects to: ";
-        for (auto edge : graph[u]) {
-            cout << "(" << edge.first << ", weight: " << edge.second << ") ";
-        }
-        cout << endl;
-    }
-
-    return 0;
-}
-\end{lstlisting}
-
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/建圖.cpp}
 
 \section{Bit Index Tree (BIT) - Lowbit}
 
