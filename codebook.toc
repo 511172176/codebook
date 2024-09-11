@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {1}Vector}{2}{}%
+\contentsline {section}{\numberline {2}使用 vector<vector<int>> 建立 2D 矩陣}{2}{}%
+\contentsline {section}{\numberline {3}Map}{2}{}%
+\contentsline {section}{\numberline {4}Stack}{3}{}%
+\contentsline {section}{\numberline {5}Priority Queue}{4}{}%
+\contentsline {section}{\numberline {6}建樹}{4}{}%
+\contentsline {section}{\numberline {7}建圖}{5}{}%
+\contentsline {section}{\numberline {8}Bit Index Tree (BIT) - Lowbit}{5}{}%
+\contentsline {section}{\numberline {9}Kruskal 最小生成樹 (MST)}{5}{}%
+\contentsline {section}{\numberline {10}SPFA 最短路徑算法}{6}{}%
+\contentsline {section}{\numberline {11}連通集 (Disjoint Set)}{6}{}%
+\contentsline {section}{\numberline {12}Nim 遊戲 SG 函數}{6}{}%
+\contentsline {section}{\numberline {13}KM Algorithm 最大匹配問題}{7}{}%
+\contentsline {section}{\numberline {14}Vector 建圖與多次 DFS 搜索}{7}{}%
+\contentsline {section}{\numberline {15}Tree DP, DFS}{7}{}%
+\contentsline {section}{\numberline {16}Dijkstra - 最短路徑算法}{8}{}%
+\contentsline {section}{\numberline {17}Kruskal 最小生成樹 (MST, Disjoint Set Union)}{8}{}%
+\contentsline {section}{\numberline {18}Priority Queue 操作}{8}{}%
+\contentsline {section}{\numberline {19}高斯消去法 (Gaussian Elimination)}{9}{}%
+\contentsline {section}{\numberline {20}排列組合與對數計算}{9}{}%
+\contentsline {section}{\numberline {21}過篩法與大數運算}{9}{}%
+\contentsline {section}{\numberline {22}Python 過篩法與大數運算}{10}{}%
+\contentsline {section}{\numberline {23}Flow Algorithm (流量算法)}{10}{}%
+\contentsline {section}{\numberline {24}Max Clique Algorithm (最大團算法)}{11}{}%
+\contentsline {section}{\numberline {25}Miller-Rabin Primality Test (米勒-拉賓素性測試)}{11}{}%
+\contentsline {section}{\numberline {26}Convex Hull Algorithm (凸包算法)}{12}{}%
