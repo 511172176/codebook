@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.6)  11 SEP 2024 09:36
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.26)  8 NOV 2024 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./codebook.tex
 (codebook.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-08-16>
+L3 programming layer <2024-08-30>
 (C:\Users\ae887\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
 (C:\Users\ae887\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
@@ -75,7 +75,7 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 ) (C:\Users\ae887\AppData\Local\Programs\MiKTeX\tex/xelatex/xecjk\xeCJK.sty
 (C:\Users\ae887\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2024-08-16 L3 programming layer (loader) 
+Package: expl3 2024-08-30 L3 programming layer (loader) 
 
 (C:\Users\ae887\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
 ex.def
@@ -499,7 +499,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (codebook.toc
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/b/n' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 2.
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 1.
 
 )
 \tf@toc=\write3
@@ -527,22 +527,18 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Vector.cpp
-
-LaTeX Font Warning: Font shape `TU/SimSun(0)/m/it' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 1.
-
+(C:/Users/ae887/OneDrive/桌面/codebook/code/vector建樹 找尋最近共同祖先.cpp
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
 )
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-(C:/Users/ae887/OneDrive/桌面/codebook/code/使用 vectorvectorint 建立 2D 矩陣.cpp)
+(C:/Users/ae887/OneDrive/桌面/codebook/code/disjoinset並查集路徑壓縮.cpp)
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Map.cpp
+(C:/Users/ae887/OneDrive/桌面/codebook/code/vector建樹 找尋最近共同祖先.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 18.0pt, for example:
@@ -553,9 +549,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2])
 
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Stack.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 18.0pt, for example:
@@ -564,181 +557,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
 
-[3])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Priority Queue.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/建樹.cpp)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 18.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
-
-[4]
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/建圖.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Bit Index Tree (BIT) - Lowbit.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Kruskal 最小生成樹 (MST).cpp
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 18.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
-
-[5])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/SPFA 最短路徑算法.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/連通集 (Disjoint Set).cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Nim 遊戲 SG 函數.cpp
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 18.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
-
-[6])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/KM Algorithm 最大匹配問題.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Vector 建圖與多次 DFS 搜索.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Tree DP, DFS.cpp
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 18.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
-
-[7])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Dijkstra - 最短路徑算法.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Kruskal 最小生成樹 (MST, Disjoint Set Unio
-n).cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Priority Queue 操作.cpp
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 18.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
-
-[8])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/高斯消去法 (Gaussian Elimination).cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/排列組合與對數計算.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/過篩法與大數運算.cpp
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 18.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
-
-[9])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Python 過篩法與大數運算.py)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Flow Algorithm (流量算法).cpp
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 18.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
-
-[10])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Max Clique Algorithm (最大團算法).cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Miller-Rabin Primality Test (米勒-拉賓素性測
-試).cpp
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 18.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
-
-[11])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Convex Hull Algorithm (凸包算法).cpp)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 18.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
-
-[12] (codebook.aux)
+[3] (codebook.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2022/08/05>
@@ -749,12 +568,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8727 strings out of 409029
- 210048 string characters out of 5756742
- 2237612 words of memory out of 5000000
- 31258 multiletter control sequences out of 15000+600000
- 558779 words of font info for 57 fonts, out of 8000000 for 9000
+ 7992 strings out of 409029
+ 194559 string characters out of 5756741
+ 952430 words of memory out of 5000000
+ 30596 multiletter control sequences out of 15000+600000
+ 558763 words of font info for 55 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 74i,13n,92p,308b,1913s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,13n,92p,308b,1823s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on codebook.pdf (12 pages).
+Output written on codebook.pdf (3 pages).
