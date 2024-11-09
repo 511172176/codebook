@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.26)  8 NOV 2024 12:20
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.26)  10 NOV 2024 01:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -527,7 +527,7 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-(C:/Users/ae887/OneDrive/桌面/codebook/code/vector建樹 找尋最近共同祖先.cpp
+(C:/Users/ae887/OneDrive/桌面/codebook/code/vector建樹 先序尋訪 找尋最近共同祖先.cpp
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
 )
@@ -538,7 +538,7 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-(C:/Users/ae887/OneDrive/桌面/codebook/code/vector建樹 找尋最近共同祖先.cpp
+(C:/Users/ae887/OneDrive/桌面/codebook/code/disjoinset並查集路徑壓縮.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 18.0pt, for example:
@@ -549,6 +549,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2])
 
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Trie tree建樹, 修改, 查詢.cpp
+
+LaTeX Font Warning: Font shape `TU/SimSun(0)/m/it' undefined
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 5.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 18.0pt, for example:
@@ -557,7 +564,218 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
 
-[3] (codebook.aux)
+[3])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/ac自動機, 多模式字串數.cpp
+Overfull \hbox (25.99474pt too wide) in paragraph at lines 48--49
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (49.19463pt too wide) in paragraph at lines 74--75
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[]  
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[4])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/tree數組模擬樹.cpp)
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/stack後序轉二元樹.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[5])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/tree前序中序找後序.cpp)
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/BST後序二分搜尋樹還原.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[6])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/BST建立結構指標二元樹.cpp)
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Heap priority queue插入取出調整.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[7])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Treap左旋右旋, 插入刪除.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[8])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Treap rope結構操作字串修改Treap.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[9])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/BST 霍夫曼樹最小代價Min Heap.cpp)
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph BFS狀態空間搜尋最短路徑.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[10])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph DFS走訪, 建無向相鄰矩陣.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[11])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph DFS剪枝回朔, 狀態空間搜尋.cpp)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[12]
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph DFS拓樸排序, DFS建相鄰有向邊.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[13])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph DFS計算圖連接性.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[14])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph BFS計算圖連接性.cpp)
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph 有向邊並查集, 速通性檢查, 樹判斷.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[15])
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph BFS計算圖連接性.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[16])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+[17] (codebook.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2022/08/05>
@@ -568,12 +786,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 7992 strings out of 409029
- 194559 string characters out of 5756741
- 952430 words of memory out of 5000000
- 30596 multiletter control sequences out of 15000+600000
- 558763 words of font info for 55 fonts, out of 8000000 for 9000
+ 8538 strings out of 409029
+ 207504 string characters out of 5756741
+ 1078430 words of memory out of 5000000
+ 31085 multiletter control sequences out of 15000+600000
+ 558771 words of font info for 56 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 74i,13n,92p,308b,1823s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,13n,92p,308b,1901s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on codebook.pdf (3 pages).
+Output written on codebook.pdf (17 pages).
