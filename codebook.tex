@@ -58,10 +58,13 @@
 \setlength{\columnsep}{35pt}  % 增大兩欄之間的欄距，設置為 35pt
 \setlength{\columnseprule}{0.4pt}  % 設置兩欄之間的分隔線
 
+\titleformat{\section}{\small\bfseries}{}{0pt}{} % 將 section 標題字體設為 \small
+\titlespacing*{\section}{0pt}{10pt}{10pt}  % 可根據需要調整標題上下間距
+
 \begin{document}
 
 % 添加目錄
-\tableofcontents  % 自動生成的目錄將在這裡顯示
+\footnotesize \tableofcontents  % 自動生成的目錄將在這裡顯示
 \newpage  % 插入分頁，使目錄和正文分開
 % 添加分欄，下面內容將分為兩欄顯示
 \begin{multicols}{2}
@@ -150,9 +153,53 @@
 
 \lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Graph 有向邊並查集, 速通性檢查, 樹判斷.cpp}
 
-\section{Graph BFS計算圖連接性}
+\section{MST Kuskal計算最小樹新增無向邊權和}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Graph BFS計算圖連接性.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/MST Kuskal計算最小樹新增無向邊權和.cpp}
+
+\section{MST prim計算權和, 線性掃描最小邊, 密稠圖}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/MST prim計算權和, 線性掃描最小邊.cpp}
+
+\section{SP Warshell閉包遞移, 二分法計算最長邊最小路徑}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SP Warshell閉包遞移, 二分法計算最長邊最小路徑.cpp}
+
+\section{SP Dijkstra重邊判斷, 找最短路徑}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SP Dijkstra重邊判斷, 找最短路徑.cpp}
+
+\section{SP Dijkstra二分搜尋最佳初始值}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SP Dijkstra二分搜尋最佳初始值.cpp}
+
+\section{SP SPFA求負權最短路徑}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SP SPFA求負權最短路徑.cpp}
+
+\section{BG HA(匈牙利算法)二分圖最大匹配}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SP SPFA求負權最短路徑.cpp}
+
+\section{BG 最大匹配數求邊覆蓋}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SP SPFA求負權最短路徑.cpp}
+
+\section{BG 二分圖匹配最大化最小值}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SP SPFA求負權最短路徑.cpp}
+
+\section{BG KM求二分圖最小權和(負邊)}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SP SPFA求負權最短路徑.cpp}
+
+\section{Flow EK求最大流}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SP SPFA求負權最短路徑.cpp}
+
+\section{Flow SPFA求最小費用流, 帶權二分圖轉網路圖}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SP SPFA求負權最短路徑.cpp}
 
 \end{multicols}
 

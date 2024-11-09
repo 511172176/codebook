@@ -15,8 +15,19 @@
 \contentsline {section}{\numberline {15}Graph BFS狀態空間搜尋最短路徑}{10}{}%
 \contentsline {section}{\numberline {16}Graph DFS走訪, 建無向相鄰矩陣}{11}{}%
 \contentsline {section}{\numberline {17}Graph DFS剪枝回朔, 狀態空間搜尋}{12}{}%
-\contentsline {section}{\numberline {18}Graph DFS回朔找尋拓樸排序, 建相鄰有向邊}{13}{}%
+\contentsline {section}{\numberline {18}Graph DFS回朔找尋拓樸排序, 建相鄰有向邊}{12}{}%
 \contentsline {section}{\numberline {19}Graph DFS計算圖連接性}{14}{}%
 \contentsline {section}{\numberline {20}Graph BFS計算圖連接性}{15}{}%
 \contentsline {section}{\numberline {21}Graph 有向邊並查集, 速通性檢查, 樹判斷}{15}{}%
-\contentsline {section}{\numberline {22}Graph BFS計算圖連接性}{16}{}%
+\contentsline {section}{\numberline {22}MST Kuskal計算最小樹新增無向邊權和}{16}{}%
+\contentsline {section}{\numberline {23}MST prim計算權和, 線性掃描最小邊, 密稠圖}{16}{}%
+\contentsline {section}{\numberline {24}SP Warshell閉包遞移, 二分法計算最長邊最小路徑}{17}{}%
+\contentsline {section}{\numberline {25}SP Dijkstra重邊判斷, 找最短路徑}{18}{}%
+\contentsline {section}{\numberline {26}SP Dijkstra二分搜尋最佳初始值}{18}{}%
+\contentsline {section}{\numberline {27}SP SPFA求負權最短路徑}{20}{}%
+\contentsline {section}{\numberline {28}BG HA(匈牙利算法)二分圖最大匹配}{20}{}%
+\contentsline {section}{\numberline {29}BG 最大匹配數求邊覆蓋}{21}{}%
+\contentsline {section}{\numberline {30}BG 二分圖匹配最大化最小值}{22}{}%
+\contentsline {section}{\numberline {31}BG KM求二分圖最小權和(負邊)}{23}{}%
+\contentsline {section}{\numberline {32}Flow EK求最大流}{24}{}%
+\contentsline {section}{\numberline {33}Flow SPFA求最小費用流, 帶權二分圖轉網路圖}{25}{}%
