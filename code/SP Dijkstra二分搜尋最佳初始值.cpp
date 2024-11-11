@@ -1,139 +1,126 @@
-##include <bits/stdc++.h>
+//UVA1027
+#include <bits/stdc++.h>
 using namespace std;
 
-// Function to convert character to index
-int turn(char x){
-    if(x >= 'A' && x <= 'Z') return x - 'A' + 1;    // 'A'-'Z' -> 1-26
-    if(x >= 'a' && x <= 'z') return x - 'a' + 27;   // 'a'-'z' -> 27-52
-    return -1; // Invalid character
+// 將字母字符轉換成索引
+int turn(char x) {
+    if (x >= 'A' && x <= 'Z') return x - 'A' + 1;    // 'A'-'Z' -> 1-26
+    if (x >= 'a' && x <= 'z') return x - 'a' + 27;   // 'a'-'z' -> 27-52
+    return -1; // 無效字符
 }
 
-// Check function: Determines the maximum cargo that can reach 'to' from 'from' with starting cargo 'o'
-int check(int from, int to, int o, bool go[][55]){
+// 檢查從起點到終點的貨物量，並計算經過給定的貨物量後能到達的最大貨物量
+int check(int from, int to, int o, bool go[][55]) {
     int g[55];
-    memset(g, 0, sizeof(g));         // Initialize cargo for each node to 0
+    memset(g, 0, sizeof(g));          // 初始化每個節點的貨物量為 0
     bool flag[55];
-    memset(flag, false, sizeof(flag)); // Initialize visit flags to false
-    g[from] = o;                      // Set starting cargo at 'from' node
+    memset(flag, false, sizeof(flag)); // 初始化訪問標記為 false
+    g[from] = o;                       // 設定起點的初始貨物量
 
-    while(true){
+    while (true) {
         int w = 0, next = -1;
-        // Find the unflagged node with the highest cargo
-        for(int i = 1; i <= 52; i++){
-            if(!flag[i] && g[i] > w){
+        // 找到貨物量最大的未標記節點
+        for (int i = 1; i <= 52; i++) {
+            if (!flag[i] && g[i] > w) {
                 next = i;
                 w = g[i];
             }
         }
 
-        if(next == -1) break; // No more nodes to process
-        flag[next] = true;     // Mark the node as processed
+        if (next == -1) break; // 無節點可以處理，退出
+        flag[next] = true;     // 標記當前節點為已處理
 
-        // Update cargo for connected nodes
-        for(int i = 1; i <= 52; i++){
-            if(go[next][i]){
+        // 更新相鄰節點的貨物量
+        for (int i = 1; i <= 52; i++) {
+            if (go[next][i]) {
                 int reduction;
-                if(i < 27){
-                    reduction = (w + 19) / 20; // Equivalent to ceil(w / 20)
-                }
-                else{
+                if (i < 27) {
+                    reduction = (w + 19) / 20; // 對應於 ceil(w / 20)
+                } else {
                     reduction = 1;
                 }
                 int tmp = w - reduction;
-                if(tmp > g[i]){
-                    g[i] = tmp; // Update cargo if the new value is higher
+                if (tmp > g[i]) {
+                    g[i] = tmp; // 更新節點貨物量
                 }
             }
         }
     }
 
-    return g[to]; // Return the cargo at the destination node
+    return g[to]; // 返回到達目標節點的貨物量
 }
 
-int main(){
+// 使用二分搜尋法找到最小的初始貨物量，使得起始貨物量從 from 到 to 的最小貨物量達到 Tot
+int findMinimalStartingCargo(int from, int to, int Tot, bool go[][55]) {
+    int l = 1, r = (1 << 20); // 搜尋範圍設置為 1 到 1048576
+
+    while (l < r) {
+        int mid = (l + r - 1) / 2; // 計算中間值
+        int cargo = check(from, to, mid, go); // 對應貨物量進行檢查
+        if (cargo >= Tot) {
+            r = mid; // 若符合要求，嘗試更小的初始貨物量
+        } else {
+            l = mid + 1; // 不符合要求，增加初始貨物量
+        }
+    }
+
+    // 驗證結果：確認二分搜尋找到的貨物量能滿足要求
+    if (check(from, to, l, go) >= Tot) {
+        return l; // 找到最小貨物量
+    } else {
+        return -1; // 如果無法滿足，返回 -1 表示不可能
+    }
+}
+
+int main() {
     ios::sync_with_stdio(false);
-    cin.tie(0); // Fast I/O
+    cin.tie(0); // 快速輸入輸出
 
-    int T; // Number of connections
-    int tot = 0; // Test case counter
+    int T; // 連接數
+    int tot = 0; // 測試案例計數
 
-    while(cin >> T){
-        if(T == -1) break; // Termination condition
+    while (cin >> T) {
+        if (T == -1) break; // 結束條件
 
-        // Initialize adjacency matrix
+        // 初始化鄰接矩陣
         bool go[55][55];
         memset(go, false, sizeof(go));
 
-        // Read T connections
-        for(int i = 0; i < T; i++){
+        // 讀取 T 條連接
+        for (int i = 0; i < T; i++) {
             char x, y;
             cin >> x >> y;
             int a = turn(x);
             int b = turn(y);
-            if(a == -1 || b == -1){
-                // Invalid characters, skip this connection
-                continue;
-            }
-            go[a][b] = go[b][a] = true; // Bidirectional connection
+            if (a == -1 || b == -1) continue; // 無效字符，跳過該連接
+            go[a][b] = go[b][a] = true; // 雙向連接
         }
 
-        // Read Tot (required cargo)
+        // 讀取 Tot（需求的最小貨物量）
         int Tot;
         cin >> Tot;
 
-        // Read source and destination characters
+        // 讀取起點和終點字符
         char fromChar, toChar;
         cin >> fromChar >> toChar;
         int from = turn(fromChar);
         int to = turn(toChar);
 
-        if(from == -1 || to == -1){
-            // Invalid source or destination nodes
+        if (from == -1 || to == -1) {
             tot++;
             cout << "Case " << tot << ": Impossible\n";
             continue;
         }
 
-        // Binary search to find the minimal starting cargo 'o' such that check(from, to, o) >= Tot
-        int l = 1, r = (1 << 20); // Search range: 1 to 1048576
-        while(l < r){
-            int mid = (l + r - 1) / 2; // Midpoint calculation
-            int cargo = check(from, to, mid, go);
-            if(cargo >= Tot){
-                r = mid; // Possible answer found, search lower half
-            }
-            else{
-                l = mid + 1; // Need a higher starting cargo, search upper half
-            }
-        }
-
-        // After binary search, 'l' should be the minimal 'o' such that check(from, to, l) >= Tot
-        // Verify the result
-        int finalCargo = check(from, to, l, go);
-        if(finalCargo >= Tot){
-            tot++;
-            cout << "Case " << tot << ": " << l << "\n";
-        }
-        else{
-            // If even the maximum cargo doesn't meet the requirement
-            tot++;
+        // 使用二分搜尋法計算最小初始貨物量
+        int result = findMinimalStartingCargo(from, to, Tot, go);
+        tot++;
+        if (result != -1) {
+            cout << "Case " << tot << ": " << result << "\n";
+        } else {
             cout << "Case " << tot << ": Impossible\n";
         }
     }
 
     return 0;
 }
-
-/*
-1
-a Z
-19 a Z
-5
-A D
-D X
-A b
-b c
-c X
-39 A X
--1
-*/

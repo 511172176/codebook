@@ -1,33 +1,34 @@
 \contentsline {section}{\numberline {1}Tree Vector建樹, DFS先序尋訪, 找尋最近LCA共同祖先}{2}{}%
 \contentsline {section}{\numberline {2}Tree Disjoinset並查集, 路徑壓縮}{2}{}%
 \contentsline {section}{\numberline {3}Tree Fenwick tree鄰接表樹, 時間戳樹, 權值陣列, lowbit修改查詢區間和}{3}{}%
-\contentsline {section}{\numberline {4}Trie建樹, 修改, 查詢}{4}{}%
+\contentsline {section}{\numberline {4}Trie 建樹, 修改, 查詢}{4}{}%
 \contentsline {section}{\numberline {5}Trie AC自動機, 多模式字串數}{4}{}%
-\contentsline {section}{\numberline {6}BST有序樹轉二元樹, 數組模擬樹}{6}{}%
+\contentsline {section}{\numberline {6}BST有序樹轉二元樹, 數組模擬樹}{5}{}%
 \contentsline {section}{\numberline {7}BST Stack後序轉二元樹}{6}{}%
-\contentsline {section}{\numberline {8}BST前序加中序找出後序}{7}{}%
-\contentsline {section}{\numberline {9}BST後序二分搜尋樹還原}{7}{}%
-\contentsline {section}{\numberline {10}BST建立結構指標二元樹, 前序尋訪}{7}{}%
+\contentsline {section}{\numberline {8}BST 前序加中序找出後序}{6}{}%
+\contentsline {section}{\numberline {9}BST 後序二分搜尋樹還原}{7}{}%
+\contentsline {section}{\numberline {10}BST 建立結構指標二元樹, 前序尋訪}{7}{}%
 \contentsline {section}{\numberline {11}BST Heap priority queue插入取出調整}{8}{}%
 \contentsline {section}{\numberline {12}BST Treap樹堆積左旋右旋, 插入刪除}{8}{}%
-\contentsline {section}{\numberline {13}BST Treap rope結構操作字串修改Treap}{10}{}%
+\contentsline {section}{\numberline {13}BST Treap rope結構操作字串修改Treap}{9}{}%
 \contentsline {section}{\numberline {14}BST 霍夫曼樹最小代價Min Heap}{10}{}%
-\contentsline {section}{\numberline {15}Graph BFS狀態空間搜尋最短路徑}{11}{}%
-\contentsline {section}{\numberline {16}Graph DFS走訪, 建無向相鄰矩陣}{12}{}%
+\contentsline {section}{\numberline {15}Graph BFS狀態空間搜尋最短路徑}{10}{}%
+\contentsline {section}{\numberline {16}Graph DFS走訪, 建無向相鄰矩陣}{11}{}%
 \contentsline {section}{\numberline {17}Graph DFS剪枝回朔, 狀態空間搜尋}{12}{}%
-\contentsline {section}{\numberline {18}Graph DFS回朔找尋拓樸排序, 建相鄰有向邊}{13}{}%
+\contentsline {section}{\numberline {18}Graph DFS回朔找尋拓樸排序, 建相鄰有向邊}{12}{}%
 \contentsline {section}{\numberline {19}Graph DFS計算圖連接性}{14}{}%
-\contentsline {section}{\numberline {20}Graph BFS計算圖連接性}{15}{}%
-\contentsline {section}{\numberline {21}Graph 有向邊並查集, 速通性檢查, 樹判斷}{16}{}%
+\contentsline {section}{\numberline {20}Graph BFS計算圖連接性}{14}{}%
+\contentsline {section}{\numberline {21}Graph 有向邊並查集, 速通性檢查, 樹判斷}{15}{}%
 \contentsline {section}{\numberline {22}MST Kuskal計算最小樹新增無向邊權和}{16}{}%
-\contentsline {section}{\numberline {23}MST prim計算權和, 線性掃描最小邊, 密稠圖}{18}{}%
-\contentsline {section}{\numberline {24}SP Warshell閉包遞移, 二分法計算最長邊最小路徑}{18}{}%
-\contentsline {section}{\numberline {25}SP Dijkstra重邊判斷, 找最短路徑}{19}{}%
-\contentsline {section}{\numberline {26}SP Dijkstra二分搜尋最佳初始值}{19}{}%
-\contentsline {section}{\numberline {27}SP SPFA求負權最短路徑}{21}{}%
-\contentsline {section}{\numberline {28}BG HA(匈牙利算法)二分圖最大匹配}{22}{}%
-\contentsline {section}{\numberline {29}BG 最大匹配數求邊覆蓋}{22}{}%
-\contentsline {section}{\numberline {30}BG 二分圖匹配最大化最小值}{23}{}%
-\contentsline {section}{\numberline {31}BG KM求二分圖最小權和(負邊)}{24}{}%
-\contentsline {section}{\numberline {32}Flow EK求最大流}{24}{}%
-\contentsline {section}{\numberline {33}Flow SPFA求最小費用流, 帶權二分圖轉網路圖}{25}{}%
+\contentsline {section}{\numberline {23}MST Prim計算權和, 線性掃描最小邊, 密稠圖}{17}{}%
+\contentsline {section}{\numberline {24}SP Warshell閉包遞移, 二分法計算最長邊最小路徑}{17}{}%
+\contentsline {section}{\numberline {25}SP Dijkstra重邊判斷, 找最短路徑}{18}{}%
+\contentsline {section}{\numberline {26}SP Dijkstra二分搜尋最佳初始值}{18}{}%
+\contentsline {section}{\numberline {27}SP SPFA求負權最短路徑}{19}{}%
+\contentsline {section}{\numberline {28}BG HA(匈牙利算法)二分圖最大匹配}{20}{}%
+\contentsline {section}{\numberline {29}BG 最大匹配數求邊覆蓋}{21}{}%
+\contentsline {section}{\numberline {30}BG 二分圖匹配最大化最小值}{21}{}%
+\contentsline {section}{\numberline {31}BG KM求二分圖最小權和(負邊)}{22}{}%
+\contentsline {section}{\numberline {32}Flow EK求最大流}{23}{}%
+\contentsline {section}{\numberline {33}Flow SPFA求最小費用流, 帶權二分圖轉網路圖}{23}{}%
+\contentsline {section}{\numberline {34}Convex Hull 凸包模板題}{25}{}%

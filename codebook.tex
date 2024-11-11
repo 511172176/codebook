@@ -36,89 +36,85 @@
 
 % 設置頁邊距
 \geometry{
-  top=1in,
-  bottom=1in,
-  left=0.9in,    % 左邊邊距調整為 0.9in
-  right=0.9in    % 右邊邊距調整為 0.9in
+  top=0.8in,
+  bottom=0.4in,
+  left=0.4in,    % 左邊邊距調整為 0.9in
+  right=0.4in    % 右邊邊距調整為 0.9in
 }
 
 % 自定義頁眉和頁腳
 \pagestyle{fancy}
 \fancyhf{} % 清除預設頁眉頁腳
-\fancyhead[L]{\fontsize{16}{18}\selectfont FJCU}  % 左側顯示學校名稱
-\fancyhead[C]{\fontsize{16}{18}\selectfont Handmade}  % 調整頁眉中間的字體大小
-\fancyhead[R]{\fontsize{16}{18}\thepage}  % 右上角顯示頁碼
+\fancyhead[L]{\fontsize{10}{10}\selectfont FJCU}  % 左側顯示學校名稱
+\fancyhead[C]{\fontsize{10}{10}\selectfont Handmade}  % 調整頁眉中間的字體大小
+\fancyhead[R]{\fontsize{10}{10}\thepage}  % 右上角顯示頁碼
 
-% 調整標題格式，減少行與行之間的間距
-\titleformat{\section}{\Large\bfseries}{}{0pt}{}
-\titlespacing*{\section}{0pt}{10pt}{10pt}  % 控制 section 與上下內容的距離
 
 % 設置分欄時的欄距和分隔線
 \setlength{\columnsep}{35pt}  % 增大兩欄之間的欄距，設置為 35pt
 \setlength{\columnseprule}{0.4pt}  % 設置兩欄之間的分隔線
 
 \titleformat{\section}{\small\bfseries}{}{0pt}{} % 將 section 標題字體設為 \small
-\titlespacing*{\section}{0pt}{10pt}{10pt}  % 可根據需要調整標題上下間距
+\titlespacing*{\section}{0pt}{3pt}{3pt}  % 可根據需要調整標題上下間距
 
 \begin{document}
 
 % 添加目錄
 \footnotesize \tableofcontents  % 自動生成的目錄將在這裡顯示
 \newpage  % 插入分頁，使目錄和正文分開
-% 添加分欄，下面內容將分為兩欄顯示
-\begin{multicols}{2}
+\begin{multicols}{2}% 添加分欄，下面內容將分為兩欄顯示
 
 \section{Tree Vector建樹, DFS先序尋訪, 找尋最近LCA共同祖先}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/vector建樹 先序尋訪 找尋最近共同祖先.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Tree Vector建樹, DFS先序尋訪, 找尋最近LCA共同祖先.cpp}
 
 \section{Tree Disjoinset並查集, 路徑壓縮}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/disjoinset並查集路徑壓縮.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Tree Disjoinset並查集, 路徑壓縮.cpp}
 
 \section{Tree Fenwick tree鄰接表樹, 時間戳樹, 權值陣列, lowbit修改查詢區間和}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/disjoinset並查集路徑壓縮.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Tree Fenwick tree鄰接表樹, 時間戳樹, 權值陣列, lowbit修改查詢區間和.cpp}
 
-\section{Trie建樹, 修改, 查詢}
+\section{Trie 建樹, 修改, 查詢}
 
 \lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Trie tree建樹, 修改, 查詢.cpp}
 
 \section{Trie AC自動機, 多模式字串數}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/ac自動機, 多模式字串數.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Trie AC自動機, 多模式字串數.cpp}
 
 \section{BST有序樹轉二元樹, 數組模擬樹}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/tree數組模擬樹.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/BST有序樹轉二元樹, 數組模擬樹.cpp}
 
 \section{BST Stack後序轉二元樹}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/stack後序轉二元樹.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/BST Stack後序轉二元樹.cpp}
 
-\section{BST前序加中序找出後序}
+\section{BST 前序加中序找出後序}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/tree前序中序找後序.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/BST 前序加中序找出後序.cpp}
 
-\section{BST後序二分搜尋樹還原}
+\section{BST 後序二分搜尋樹還原}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/BST後序二分搜尋樹還原.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/BST 後序二分搜尋樹還原.cpp}
 
-\section{BST建立結構指標二元樹, 前序尋訪}
+\section{BST 建立結構指標二元樹, 前序尋訪}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/BST建立結構指標二元樹.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/BST 建立結構指標二元樹.cpp}
 
 \section{BST Heap priority queue插入取出調整}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Heap priority queue插入取出調整.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/BST Heap priority queue插入取出調整.cpp}
 
 \section{BST Treap樹堆積左旋右旋, 插入刪除}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Treap左旋右旋, 插入刪除.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/BST Treap樹堆積左旋右旋, 插入刪除.cpp}
 
 \section{BST Treap rope結構操作字串修改Treap}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Treap rope結構操作字串修改Treap.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/BST Treap rope結構操作字串修改Treap.cpp}
 
 \section{BST 霍夫曼樹最小代價Min Heap}
 
@@ -138,7 +134,7 @@
 
 \section{Graph DFS回朔找尋拓樸排序, 建相鄰有向邊}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Graph DFS拓樸排序, DFS建相鄰有向邊.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Graph DFS回朔找尋拓樸排序, 建相鄰有向邊.cpp}
 
 \section{Graph DFS計算圖連接性}
 
@@ -156,9 +152,9 @@
 
 \lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/MST Kuskal計算最小樹新增無向邊權和.cpp}
 
-\section{MST prim計算權和, 線性掃描最小邊, 密稠圖}
+\section{MST Prim計算權和, 線性掃描最小邊, 密稠圖}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/MST prim計算權和, 線性掃描最小邊.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/MST Prim計算權和, 線性掃描最小邊, 密稠圖.cpp}
 
 \section{SP Warshell閉包遞移, 二分法計算最長邊最小路徑}
 
@@ -186,7 +182,7 @@
 
 \section{BG 二分圖匹配最大化最小值}
 
-\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/SP SPFA求負權最短路徑.cpp}
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/BG 二分圖匹配最大化最小值.cpp}
 
 \section{BG KM求二分圖最小權和(負邊)}
 
@@ -199,6 +195,10 @@
 \section{Flow SPFA求最小費用流, 帶權二分圖轉網路圖}
 
 \lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Flow SPFA求最小費用流, 帶權二分圖轉網路圖.cpp}
+
+\section{Convex Hull 凸包模板題}
+
+\lstinputlisting{C:/Users/ae887/OneDrive/桌面/codebook/code/Convex Hull 凸包模板題.cpp}
 
 \end{multicols}
 

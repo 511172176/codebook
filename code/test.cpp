@@ -1,4 +1,3 @@
-//POJ1094
 #include <iostream>
 #include <vector>
 #include <cstring>
@@ -106,9 +105,7 @@ int main() {
             vector<int> result;
             if (topological_sort(N, g, in_degree, result)) {
                 cout << "Sorted sequence determined after " << (i + 1) << " relations: ";
-                for (size_t idx = 0; idx < result.size(); idx++) {
-                    cout << char('A' + result[idx]);
-                }
+                for (int node : result) cout << char('A' + node);
                 cout << "." << endl;
 
                 for (int j = i + 1; j < K; j++) cin >> relation;  // 忽略剩餘關係

@@ -1,34 +1,36 @@
+//POJ2421
 #include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
 
-// µ²ºcÅéªí¥ÜÃä¤Î¨äÅv­«
+// å®šç¾©é‚Šçµæ§‹
 struct Edge {
-    int u;
-    int v;
-    int weight;
+    int u;      // èµ·é»
+    int v;      // çµ‚é»
+    int weight; // æ¬Šé‡
 };
 
-// Union-Find (Disjoint Set Union - DSU) Ãş§O
+// å®šç¾©ä¸¦æŸ¥é›†ï¼ˆUnion-Findï¼‰é¡åˆ¥
 class UnionFind {
 private:
-    vector<int> parent;
+    vector<int> parent; // çˆ¶ç¯€é»
+
 public:
-    // ªì©l¤Æ DSU¡A¸`ÂI¼Æ¬° n
-    UnionFind(int n) : parent(n + 1) { // °²³]¸`ÂI±q 1 ¶}©l
+    // å»ºæ§‹å­ï¼Œåˆå§‹åŒ–ä¸¦æŸ¥é›†ï¼Œæ¯å€‹ç¯€é»çš„çˆ¶ç¯€é»ç‚ºè‡ªå·±
+    UnionFind(int n) : parent(n + 1) { // ä½¿ç”¨ 1-based ç´¢å¼•
         for(int i = 0; i <= n; ++i)
             parent[i] = i;
     }
 
-    // ¬d§ä¶°¦Xªº®Ú¡A¨Ã¶i¦æ¸ô®|À£ÁY
+    // æŸ¥æ‰¾é›†åˆï¼Œä¸¦é€²è¡Œè·¯å¾‘å£“ç¸®
     int find_set(int x) {
         if(parent[x] != x)
             parent[x] = find_set(parent[x]);
         return parent[x];
     }
 
-    // ¦X¨Ö¨â­Ó¶°¦X
+    // åˆä½µå…©å€‹é›†åˆ
     void union_set(int x, int y) {
         int fx = find_set(x);
         int fy = find_set(y);
@@ -37,82 +39,82 @@ public:
     }
 };
 
-// ¤ñ¸û¨ç¦¡¡A¥Î©ó±Æ§ÇÃä
+// æ¯”è¼ƒå…©æ¢é‚Šçš„æ¬Šé‡ï¼Œç”¨æ–¼æ’åº
 bool compare_edges(const Edge &a, const Edge &b) {
     return a.weight < b.weight;
 }
 
-// °õ¦æ Kruskal ºtºâªk¨Ãªğ¦^³Ì¤p¥Í¦¨¾ğªºÁ`Åv­«
-int kruskal(int N, vector<Edge> &edges, UnionFind &uf) {
-    // «öÅv­«¹ïÃä¶i¦æ±Æ§Ç¡]±q¤p¨ì¤j¡^
+// è¨ˆç®—æœ€å°ç”Ÿæˆæ¨¹ç¸½æ¬Šé‡çš„å‡½å¼
+int calculateMSTWeight(int N, const vector<vector<int>> &P, int M, const vector<pair<int, int>> &preConnected) {
+    // åˆå§‹åŒ–ä¸¦æŸ¥é›†
+    UnionFind uf(N);
+
+    // å°‡å·²ç¶“é å…ˆé€£æ¥çš„é‚ŠåŠ å…¥ä¸¦æŸ¥é›†
+    for(int i = 0; i < preConnected.size(); ++i) {
+        int a = preConnected[i].first;
+        int b = preConnected[i].second;
+        uf.union_set(a, b);
+    }
+
+    // æ”¶é›†æ‰€æœ‰å¯èƒ½çš„é‚Š
+    vector<Edge> edges;
+    for(int i = 1; i <= N; i++) {
+        for(int j = i + 1; j <= N; j++) { // ç¢ºä¿ j > i é¿å…é‡è¤‡é‚Š
+            if(P[i][j] > 0) { // åªè€ƒæ…®æ¬Šé‡å¤§æ–¼ 0 çš„é‚Š
+                Edge e;
+                e.u = i;
+                e.v = j;
+                e.weight = P[i][j];
+                edges.push_back(e);
+            }
+        }
+    }
+
+    // å°æ‰€æœ‰é‚ŠæŒ‰ç…§æ¬Šé‡é€²è¡Œæ’åº
     sort(edges.begin(), edges.end(), compare_edges);
 
     int total_weight = 0;
+    // éæ­·æ‰€æœ‰é‚Šï¼Œé¸æ“‡ä¸å½¢æˆç’°è·¯çš„é‚ŠåŠ å…¥ MST
     for(int i = 0; i < edges.size(); ++i) {
         Edge edge = edges[i];
-        // ¦pªGÃäªº¨â­Ó¸`ÂIÄİ©ó¤£¦Pªº¶°¦X¡A«h¥[¤J³Ì¤p¥Í¦¨¾ğ
         if(uf.find_set(edge.u) != uf.find_set(edge.v)) {
             uf.union_set(edge.u, edge.v);
             total_weight += edge.weight;
         }
     }
+
     return total_weight;
 }
 
 int main() {
     ios::sync_with_stdio(false);
-    cin.tie(0); // ¨Ï¥Î 0 ¥N´À nullptr
+    cin.tie(0); // æé«˜è¼¸å…¥è¼¸å‡ºæ•ˆç‡
 
     int N;
-    while(cin >> N) {  // Åª¨ú¸`ÂI¼Æ N
-        // Åª¨ú¾F±µ¯x°}
+    while(cin >> N) {  // è®€å–ç¯€é»æ•¸é‡
+        // è®€å–é„°æ¥çŸ©é™£
         vector<vector<int>> P(N + 1, vector<int>(N + 1, 0));
-        for(int i = 1; i <= N; ++i) {  // 1-based indexing
-            for(int j = 1; j <= N; ++j) {
+        for(int i = 1; i <= N; i++) {  // 1-based ç´¢å¼•
+            for(int j = 1; j <= N; j++) {
                 cin >> P[i][j];
             }
         }
 
-        // ªì©l¤Æ Union-Find
-        UnionFind uf(N);
-
-        // Åª¨ú¤w¸g³s±µªºÃä¼Æ M ¨Ã¦X¨Ö³o¨ÇÃä
+        // è®€å–å·²ç¶“é é€£æ¥çš„é‚Š
         int M;
         cin >> M;
+        vector<pair<int, int>> preConnected;
         for(int i = 0; i < M; ++i) {
             int a, b;
             cin >> a >> b;
-            uf.union_set(a, b);
+            preConnected.push_back(make_pair(a, b));
         }
 
-        // ¦¬¶°©Ò¦³Ãä¡AÁ×§K­«½Æ¡]µL¦V¹Ï¡^
-        vector<Edge> edges;
-        for(int i = 1; i <= N; ++i) {
-            for(int j = i + 1; j <= N; ++j) { // j ±q i+1 ¶}©lÁ×§K­«½Æ
-                if(P[i][j] > 0) { // °²³] 0 ªí¥Ü¨S¦³Ãä
-                    edges.push_back(Edge{ i, j, P[i][j] });
-                }
-            }
-        }
+        // è¨ˆç®—æœ€å°ç”Ÿæˆæ¨¹çš„ç¸½æ¬Šé‡
+        int total_MST_weight = calculateMSTWeight(N, P, M, preConnected);
 
-        // °õ¦æ Kruskal ºtºâªk¥H­pºâ³Ì¤p¥Í¦¨¾ğªºÁ`Åv­«
-        int total_MST_weight = kruskal(N, edges, uf);
-
-        // ¨Ï¥Î std::endl ¥H½T«O¨C­Ó´ú¸Õ®×¨Ò«á¥ß§Y¿é¥X
-        cout << total_MST_weight << endl;
+        // è¼¸å‡º MST çš„ç¸½æ¬Šé‡
+        cout << total_MST_weight << "\n";
     }
     return 0;
 }
-
-/*
-½d¨Ò¿é¤J:
-3
-0 990 692
-990 0 179
-692 179 0
-1
-1 2
-
-¹w´Á¿é¥X:
-179
-*/
