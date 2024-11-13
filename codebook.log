@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.26)  12 NOV 2024 04:16
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.26)  13 NOV 2024 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -496,12 +496,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(codebook.toc
-
-LaTeX Font Warning: Font shape `TU/SimSun(0)/b/n' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 1.
-
-)
+(codebook.toc)
 \tf@toc=\write3
 \openout3 = `codebook.toc'.
 
@@ -510,6 +505,10 @@ LaTeX Font Warning: Font shape `TU/SimSun(0)/b/n' undefined
 [1
 
 ]
+
+LaTeX Font Warning: Font shape `TU/SimSun(0)/b/n' undefined
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 67.
+
 
 Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                
@@ -533,159 +532,4 @@ LaTeX Font Warning: Font shape `TU/SimSun(0)/m/it' undefined
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Tree Disjoinset並查集, 路徑壓縮.cpp [2])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Tree Fenwick tree鄰接表樹, 時間戳樹, 權值陣列, lo
-wbit修改查詢區間和.cpp [3])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Trie tree建樹, 修改, 查詢.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Trie AC自動機, 多模式字串數.cpp [4])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BST有序樹轉二元樹, 數組模擬樹.cpp [5])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BST Stack後序轉二元樹.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BST 前序加中序找出後序.cpp [6])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BST 後序二分搜尋樹還原.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BST 建立結構指標二元樹.cpp [7])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BST Heap priority queue插入取出調整.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BST Treap樹堆積左旋右旋, 插入刪除.cpp [8])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BST Treap rope結構操作字串修改Treap.cpp
-[9])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BST 霍夫曼樹最小代價Min Heap.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph BFS狀態空間搜尋最短路徑.cpp [10])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph DFS走訪, 建無向相鄰矩陣.cpp [11])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph DFS剪枝回朔, 狀態空間搜尋.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph DFS回朔找尋拓樸排序, 建相鄰有向邊.cpp
-[12] [13])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph DFS計算圖連接性.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph BFS計算圖連接性.cpp [14])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Graph 有向邊並查集, 速通性檢查, 樹判斷.cpp [15])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/MST Kuskal計算最小樹新增無向邊權和.cpp [16])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/MST Prim計算權和, 線性掃描最小邊, 密稠圖.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/SP Warshell閉包遞移, 二分法計算最長邊最小路徑.cpp
-[17])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/SP Dijkstra重邊判斷, 找最短路徑.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/SP Dijkstra二分搜尋最佳初始值.cpp [18])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/SP SPFA求負權最短路徑.cpp [19])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BG HA(匈牙利算法)二分圖最大匹配.cpp [20])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BG 最大匹配數求邊覆蓋.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BG 二分圖匹配最大化最小值.cpp [21])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/BG KM求二分圖最小權和(負邊).cpp [22])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Flow EK求最大流.cpp)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Flow SPFA求最小費用流, 帶權二分圖轉網路圖.cpp
-[23] [24])
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(C:/Users/ae887/OneDrive/桌面/codebook/code/Convex Hull 凸包模板題.cpp)
-
-[25] (codebook.aux)
- ***********
-LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2022/08/05>
- ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
-Here is how much of TeX's memory you used:
- 9009 strings out of 409029
- 218918 string characters out of 5756741
- 1120460 words of memory out of 5000000
- 31518 multiletter control sequences out of 15000+600000
- 558771 words of font info for 56 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 74i,13n,92p,308b,1943s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on codebook.pdf (25 pages).
+(C:/Users/ae887/OneDrive/桌面/codebook/code/Tree Disjoinset並查集, 路徑壓縮.cpp [2

@@ -1,4 +1,21 @@
 //POJ2001
+/*
+v.push_back(10) 將元素添加到 vector 的尾部。
+v.pop_back() 移除 vector 尾部的元素。
+v.size() 返回當前 vector 中元素的個數。
+v.empty() 檢查 vector 是否為空。
+v.clear() 移除 vector 中的所有元素，使其變為空。
+v.resize(5) 調整 vector 的大小，可以擴展或縮減 vector 的長度。
+v.at(2) 返回指定索引位置的元素，並進行越界檢查。
+v[2] 返回指定索引位置的元素，不進行越界檢查。
+v.front() 返回 vector 首元素的引用。
+v.back() 返回 vector 尾元素的引用。
+v.insert(v.begin() + 2, 10) 在指定位置插入元素，位置之前的元素會向後移動。
+v.erase(v.begin() + 2) 移除指定位置或區域的元素，之後的元素會向前移動。
+v.capacity() 返回 vector 的容量，即不需要重新分配的情況下可容納的最大元素數量。
+v.reserve() 預留空間以增加容量，避免頻繁擴展。
+v.shrink_to_fit() 將容量縮減到等於當前元素數量，以釋放多餘的空間。
+*/
 #include <cstdio>
 #include <cstring>
 #include <algorithm>

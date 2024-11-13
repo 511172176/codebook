@@ -1,4 +1,19 @@
 //POJ3367
+/*
+stak<參數>
+s.push(10); 將數值 10 放入棧頂。
+s.pop(); 將棧頂元素移除。
+s.top(); 返回當前棧頂的值。
+s.empty(); 返回棧的空狀態。
+s.size(); 返回棧內當前的元素數量。
+queue<參數>
+queue.push()
+queue.pop()
+queue.front()
+queue.back()
+queue.empty()
+queue.size()
+*/
 #include <iostream>
 #include <stack>
 #include <queue>

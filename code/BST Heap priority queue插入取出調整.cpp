@@ -1,4 +1,11 @@
 //ZOJ2724
+/*
+priority_queue<參數1, 參數2, 參數3>
+堆積變數.front() 傳回堆積第一原素
+堆積變數.empty() 判斷堆積是否為空 布林
+堆積變數.push(a) a推入堆積
+堆積變數.pop() 提出堆積
+*/
 #include <iostream>
 #include <cstdio>
 #include <cstring>
